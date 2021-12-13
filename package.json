@@ -1,0 +1,36 @@
+{
+	"name": "socialin",
+	"version": "1.0.0",
+	"description": "Social Media app build with node.js and React",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server",
+		"backend": "nodemon server",
+		"frontend": "npm start --prefix frontend",
+		"dev": "concurrently \"npm run backend\" \"npm run frontend\" "
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"author": "Mihai",
+	"license": "ISC",
+	"bugs": {
+		"url": ""
+	},
+	"homepage": "",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"config": "^3.3.6",
+		"express": "^4.17.1",
+		"express-validator": "^6.12.2",
+		"gravatar": "^1.8.2",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^6.0.9",
+		"request": "^2.88.2"
+	},
+	"devDependencies": {
+		"concurrently": "^6.3.0",
+		"nodemon": "^2.0.13"
+	}
+}
